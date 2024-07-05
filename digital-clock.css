@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.top {
+
+    border: 3px solid gray;
+    /* height: 20em; */
+    /* width: 40rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 50px; */
+}
+
+
+
+.clock {
+    border: 10px solid gray;
+    height: 15em;
+    width: 32rem;
+    background-color: black;
+    color: white;
+
+}
+
+.week {
+    color: gray;
+    display: flex;
+    justify-content: space-around;
+}
+
+.week span {
+    padding: 4%;
+    /* box-shadow: 1px 1px 2px gray; */
+
+}
+
+.showTimes {
+    height: 12rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.time {
+    /* border: 5px solid gray; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* text-align: center; */
+    /* text-align: justify; */
+    font-size: 3rem;
+    height: 5rem;
+    width: 8rem;
+    /* padding: auto; */
+    /* margin: auto; */
+    box-shadow: 5px 5px 10px gray;
+    cursor: pointer;
+
+}
+
+.showTimes1 {
+    height: 12rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.bth {
+    color: white;
+    background-color: black;
+    height: 30px;
+    cursor: pointer;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.wk-style {
+    color: white;
+    background-color: rgb(85, 12, 12);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(208, 156, 156);
+}
+
+.clock1 {
+    border: 10px solid gray;
+    height: 15em;
+    width: 32rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.time1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* text-align: center; */
+    /* text-align: justify; */
+    font-size: 3rem;
+    height: 2rem;
+    width: 8rem;
+    /* padding: auto; */
+    /* margin: auto; */
+    /* border-radius: 30%; */
+    box-shadow: 5px 5px 10px gray;
+    cursor: pointer;
+
+}

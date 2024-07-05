@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital-clock</title>
+    <link rel="stylesheet" href="digital-clock.css">
+
+</head>
+
+<body>
+    <div class="top">
+        <div class="btn">
+            <button class="bth" id="clock" type="button">Clock</button>
+            <button class="bth" id="stop_watch" type="button">Stop Watch</button>
+            <button class="bth" id="step_count" type="button">Step Count</button>
+            <button class="bth" id="set_timmer" type="button">Set Timmer</button>
+        </div>
+        <div class="clock" id="stop_watch_id" style="display: none;">
+            <div class="showTimes1">
+                <div class="time" id="minutes"></div>
+                <div><svg width=" 50" height="100" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Top circle -->
+                        <circle cx="25" cy="30" r="5" fill="white" />
+                        <!-- Bottom circle -->
+                        <circle cx="25" cy="70" r="5" fill="white" />
+                    </svg>
+                </div>
+                <div class="time" id="seconds"></div>
+            </div>
+            <div class="btn">
+                <button class="bth" id="start">Start</button>
+                <button class="bth" id="pause">Pause</button>
+                <button class="bth" id="reset">Reset</button>
+            </div>
+
+        </div>
+        <div class="clock" id="step_count_id" style="display: none;">
+            <div class="showTimes1">
+                <div class="time" id="plus">+</div>
+                <div class="time" id="value">00</div>
+                <div class="time" id="minus">-</div>
+            </div>
+            <div class="btn">
+                <button class="bth" id="reset1">Reset</button>
+            </div>
+
+        </div>
+        <div class="clock" id="set_timmer_id" style="display: none;">
+            <!-- <h1>SET TIMMER</h1> -->
+            <div class="showTimes1">
+                <!-- <div>
+                    <div class="time1" id="plus1">+</div>
+                    <span>HOURS</span>
+                    <div class="time" id="set_hour">00</div>
+                    <div class="time1" id="minus1">-</div>
+                </div> -->
+                <div>
+                    <div class="time1" id="plus2">+</div>
+                    <span>MINUTES</span>
+                    <div class="time" id="set_minutes">00</div>
+                    <div class="time1" id="minus2">-</div>
+                </div>
+                <div>
+                    <div class="time1" id="plus3">+</div>
+                    <span>SECONDS</span>
+                    <div class="time" id="set_seconds">00</div>
+                    <div class="time1" id="minus3">-</div>
+                </div>
+            </div>
+            <div class="btn">
+                <button class="bth" id="reset2">Start</button>
+            </div>
+        </div>
+
+
+        <div class="clock" id="clock_id">
+            <div class="week" id="week">
+                <span>Sun</span>
+                <span>Mon</span>
+                <span>Tue</span>
+                <span>Wed</span>
+                <span>Thu</span>
+                <span>Fru</span>
+                <span>Sat</span>
+
+            </div>
+            <div class="showTimes">
+                <div class="time" id="hour"></div>
+                <div><svg width="50" height="100" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Top circle -->
+                        <circle cx="25" cy="30" r="5" fill="white" />
+                        <!-- Bottom circle -->
+                        <circle cx="25" cy="70" r="5" fill="white" />
+                    </svg></div>
+                <div class="time" id="minute"></div>
+                <div><svg width="50" height="100" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Top circle -->
+                        <circle cx="25" cy="30" r="5" fill="white" />
+                        <!-- Bottom circle -->
+                        <circle cx="25" cy="70" r="5" fill="white" />
+                    </svg></div>
+                <div class="time" id="second"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="digital-clock.js">
+</script>
+
+</html>
